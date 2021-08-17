@@ -1,7 +1,28 @@
 .Notifications {
-    padding: 50px;
-    margin-left: 15px;
-    margin-right: 15px;
-    border-top: solid #e0354b 3px;
-    border-bottom: solid #e0354b 3px;
-  }
+  
+  margin-left: 15px;
+  margin-right: 15px;
+  border: dotted #e0354b 3px;
+}
+
+.Notifications button img {
+  width: 8px;
+}
+
+.Notifications button {
+ margin-top: 5px;
+ margin-right: 5px;
+}
+
+.Notifications p {
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+[data-priority="default"] {
+  color: blue;
+}
+
+[data-priority="urgent"] {
+  color: red;
+}
