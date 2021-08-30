@@ -26,6 +26,7 @@ class App extends React.Component {
   componentWillUnmount() {
     window.removeEventListener('keydown', this.handleLogout);
   }
+
   render() {
     const { isLoggedIn } = this.props;
 
@@ -57,11 +58,13 @@ class App extends React.Component {
 }
 
 App.propTypes = {
-  isLoggedIn: PropTypes.bool
+  isLoggedIn: PropTypes.bool,
+  logOut: PropTypes.func
 };
 
 App.defaultProps = {
   isLoggedIn: false
+  logOut: () => {}
 };
 
 export default App;
